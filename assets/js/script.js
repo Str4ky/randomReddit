@@ -39,7 +39,7 @@ button.addEventListener('click', async () => {
                 }
             }
 
-            postContent += `<a href='https://reddit.com/${link}' target='_blank' id='link'>Link to post</a>`;
+            postContent += `<a href='https://reddit.com${link}' target='_blank' id='link'>Link to post</a>`;
 
             post.innerHTML = postContent;
         } else {
