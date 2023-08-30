@@ -57,10 +57,228 @@ button:hover {
     padding-left: 20px;
     padding-right: 10px;
     margin-top: 48px;
-    width: 35%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+}
+
+#image {
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 500px;
+    height: 300px;
+}
+
+#image:hover {
+    opacity: 0.8;    
+}
+
+#video {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+@media (max-width: 1200px) {
+    #post {
+        background-color: #1f1f1f;
+        padding-top: 1px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 10px;
+        margin-top: 48px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+    }
+    
+    #image {
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+        width: 500px;
+        height: 300px;
+    }
+    
+    #image:hover {
+        opacity: 0.8;    
+    }
+    
+    #video {
+        width: 500px;
+        height: 300px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    input[type="text"] {
+        padding: 5px;
+        width: 30%;
+        margin-left: 10px;
+        font-size: 22px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    button {
+        background-color: #f56410;
+        color: #e7e7e7;
+        padding: 10px;
+        width: 20%;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 8px;
+        border: none;
+        transition: 0.2s;
+    }
+
+    #post {
+        background-color: #1f1f1f;
+        padding-top: 1px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 10px;
+        margin-top: 48px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+    }
+    
+    #image {
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+        width: 500px;
+        height: 300px;
+    }
+    
+    #image:hover {
+        opacity: 0.8;    
+    }
+    
+    #video {
+        width: 500px;
+        height: 300px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 650px) {
+    input[type="text"] {
+        padding: 5px;
+        width: 40%;
+        margin-left: 10px;
+        font-size: 22px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    button {
+        background-color: #f56410;
+        color: #e7e7e7;
+        padding: 10px;
+        width: 30%;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 8px;
+        border: none;
+        transition: 0.2s;
+    }
+
+    #post {
+        background-color: #1f1f1f;
+        padding-top: 1px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 10px;
+        margin-top: 48px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+    }
+    
+    #image {
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+        width: 300px;
+        height: 200px;
+    }
+    
+    #image:hover {
+        opacity: 0.8;    
+    }
+    
+    #video {
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    input[type="text"] {
+        padding: 5px;
+        width: 60%;
+        margin-left: 10px;
+        font-size: 22px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    button {
+        background-color: #f56410;
+        color: #e7e7e7;
+        padding: 10px;
+        width: 40%;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 8px;
+        border: none;
+        transition: 0.2s;
+    }
+
+    #post {
+        background-color: #1f1f1f;
+        padding-top: 1px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 10px;
+        margin-top: 48px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+    }
+    
+    #image {
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+        width: 200px;
+        height: 100px;
+    }
+    
+    #image:hover {
+        opacity: 0.8;    
+    }
+    
+    #video {
+        width: 200px;
+        height: 100px;
+        border-radius: 8px;
+    }
 }
 
 #infos {
@@ -106,21 +324,6 @@ button:hover {
 #link:hover {
     background-color: #ff7627;
     cursor: pointer;
-}
-
-#image {
-    object-fit: cover;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#image:hover {
-    opacity: 0.8;    
-}
-
-#video {
-    border-radius: 8px;
 }
 
 .popup {
