@@ -27,6 +27,7 @@ input[type="text"] {
 
 span {
     font-size: 22px;
+    margin-right: -4px;
 }
 
 button {
