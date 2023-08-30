@@ -42,6 +42,8 @@ button.addEventListener('click', async () => {
             postContent += `<a href='https://reddit.com${link}' target='_blank' id='link'>Link to post</a>`;
 
             post.innerHTML = postContent;
+
+            button.innerHTML = "Load another post";
         } else {
             post.innerHTML = `<h2 id='error'>No post found</h2>`;
         }
@@ -111,6 +113,8 @@ input.addEventListener('keydown', async (event) => {
                 postContent += `<a href='https://reddit.com${link}' target='_blank' id='link'>Link to post</a>`;
     
                 post.innerHTML = postContent;
+
+                button.innerHTML = "Load another post";
             } else {
                 post.innerHTML = `<h2 id='error'>No post found</h2>`;
             }
