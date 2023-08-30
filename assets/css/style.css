@@ -111,8 +111,44 @@ button:hover {
 #image {
     object-fit: cover;
     border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#image:hover {
+    opacity: 0.8;    
 }
 
 #video {
     border-radius: 8px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    z-index: 999;
+}
+
+.popup-image {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    height: 100%;
+    padding-top: 2%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
