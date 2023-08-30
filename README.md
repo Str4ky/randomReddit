@@ -1,2 +1,2 @@
 # randomReddit
-View random Reddit post
+To see random Reddit post
