@@ -30,16 +30,16 @@ button.addEventListener('click', async () => {
 
             if(media == true) {
                 const video = data.media.reddit_video.fallback_url;
-                postContent += `<video controls src="${video}" alt="video" id='video' width='500' height='300'><br><br>`;
-                postContent += `<a href='https://reddit.com/${link}' target='_blank' id='link'>Link to post</a>`;
+                postContent += `<video controls src="${video}" alt="video" id='video' width='500' height='300'></video><br><br>`;
             }
             else {
                 if(mediaURL.includes(".png") || mediaURL.includes(".jpg") || mediaURL.includes(".jpeg") || mediaURL.includes(".gif") || mediaURL.includes(".webp")) {
                     const image = data.url_overridden_by_dest;
-                    postContent += `<img src="${image}" alt="image" id='image' width='500' height='300'><br><br>`;
-                    postContent += `<a href='https://reddit.com/${link}' target='_blank' id='link'>Link to post</a>`;
+                    postContent += `<img src="${image}" alt="image" id='image' width='500' height='300' /><br><br>`;
                 }
             }
+
+            postContent += `<a href='https://reddit.com/${link}' target='_blank' id='link'>Link to post</a>`;
 
             post.innerHTML = postContent;
         } else {
