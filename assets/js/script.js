@@ -36,6 +36,21 @@ button.addEventListener('click', async () => {
                 if(mediaURL.includes(".png") || mediaURL.includes(".jpg") || mediaURL.includes(".jpeg") || mediaURL.includes(".gif") || mediaURL.includes(".webp")) {
                     postContent += `<img src='${mediaURL}' alt='image' id='image' class='thumbnail' onclick="openPopup('${mediaURL}')" /><br><br>`;
                 }
+                else if(mediaURL.includes("youtube.com/watch")) {
+                    const youtubeURL = mediaURL.replace("/watch?v=", "/embed/");
+                    postContent += `<iframe src="${youtubeURL}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id='youtube'></iframe><br><br>`;
+                }
+                else if(mediaURL.includes("youtube.com/shorts")) {
+                    const youtubeURL = mediaURL.replace("/shorts/", "/embed/");
+                    postContent += `<iframe src="${youtubeURL}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id='youtube'></iframe><br><br>`;
+                }
+                else if(mediaURL.includes("youtu.be")) {
+                    const youtubeURL = mediaURL.replace("youtu.be/", "youtube.com/embed/");
+                    postContent += `<iframe src="${youtubeURL}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id='youtube'></iframe><br><br>`;
+                }
+                else {
+                    postContent += `<a href="${mediaURL} target="_blank" id="media">${mediaURL}</a><br><br>`;
+                }
             }
 
             postContent += `<a href='https://reddit.com${link}' target='_blank' id='link'>Link to post</a>`;
@@ -86,6 +101,21 @@ input.addEventListener('keydown', async (event) => {
                 else {
                     if(mediaURL.includes(".png") || mediaURL.includes(".jpg") || mediaURL.includes(".jpeg") || mediaURL.includes(".gif") || mediaURL.includes(".webp")) {
                         postContent += `<img src='${mediaURL}' alt='image' id='image' class='thumbnail' onclick="openPopup('${mediaURL}')" /><br><br>`;
+                    }
+                    else if(mediaURL.includes("youtube.com/watch")) {
+                        const youtubeURL = mediaURL.replace("/watch?v=", "/embed/");
+                        postContent += `<iframe src="${youtubeURL}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id='youtube'></iframe><br><br>`;
+                    }
+                    else if(mediaURL.includes("youtube.com/shorts")) {
+                        const youtubeURL = mediaURL.replace("/shorts/", "/embed/");
+                        postContent += `<iframe src="${youtubeURL}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id='youtube'></iframe><br><br>`;
+                    }
+                    else if(mediaURL.includes("youtu.be")) {
+                        const youtubeURL = mediaURL.replace("youtu.be/", "youtube.com/embed/");
+                        postContent += `<iframe src="${youtubeURL}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id='youtube'></iframe><br><br>`;
+                    }
+                    else {
+                        postContent += `<a href="${mediaURL} target="_blank" id="media">${mediaURL}</a><br><br>`;
                     }
                 }
     
