@@ -52,7 +52,7 @@ span {
 }
 
 button {
-    background-color: #f56410;
+    background-color: #ff4500;
     color: #e7e7e7;
     padding: 10px;
     width: 12%;
@@ -65,7 +65,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff7627;
+    background-color: #ff5f25;
     cursor: pointer;
 }
 
@@ -117,7 +117,7 @@ button:hover {
     }
 
     button {
-        background-color: #f56410;
+        background-color: #ff4500;
         color: #e7e7e7;
         padding: 10px;
         width: 15%;
@@ -173,7 +173,7 @@ button:hover {
     }
 
     button {
-        background-color: #f56410;
+        background-color: #ff4500;
         color: #e7e7e7;
         padding: 10px;
         width: 25%;
@@ -229,7 +229,7 @@ button:hover {
     }
 
     button {
-        background-color: #f56410;
+        background-color: #ff4500;
         color: #e7e7e7;
         padding: 10px;
         width: 35%;
@@ -285,7 +285,7 @@ button:hover {
     }
 
     button {
-        background-color: #f56410;
+        background-color: #ff4500;
         color: #e7e7e7;
         padding: 10px;
         width: 45%;
@@ -359,7 +359,7 @@ button:hover {
 }
 
 #link {
-    background-color: #f56410;
+    background-color: #ff4500;
     color: #e7e7e7;
     text-decoration: none;
     padding: 10px;
@@ -371,7 +371,7 @@ button:hover {
 }
 
 #link:hover {
-    background-color: #ff7627;
+    background-color: #ff5f25;
     cursor: pointer;
 }
 
