@@ -29,13 +29,12 @@ button.addEventListener('click', async () => {
             }
 
             if(media == true) {
-                const video = data.media.reddit_video.fallback_url;
-                postContent += `<video controls src='${video}' alt='video' id='video'></video><br><br>`;
+                const videoURL = data.media.reddit_video.fallback_url;
+                postContent += `<video controls src='${videoURL}' alt='video' id='video'></video><br><br>`;
             }
             else {
                 if(mediaURL.includes(".png") || mediaURL.includes(".jpg") || mediaURL.includes(".jpeg") || mediaURL.includes(".gif") || mediaURL.includes(".webp")) {
-                    const image = data.url_overridden_by_dest;
-                    postContent += `<img src='${image}' alt='image' id='image' class='thumbnail' onclick="openPopup('${image}')" /><br><br>`;
+                    postContent += `<img src='${mediaURL}' alt='image' id='image' class='thumbnail' onclick="openPopup('${mediaURL}')" /><br><br>`;
                 }
             }
 
@@ -81,13 +80,12 @@ input.addEventListener('keydown', async (event) => {
                 }
     
                 if(media == true) {
-                    const video = data.media.reddit_video.fallback_url;
-                    postContent += `<video controls src='${video}' alt='video' id='video'></video><br><br>`;
+                    const videoURL = data.media.reddit_video.fallback_url;
+                    postContent += `<video controls src='${videoURL}' alt='video' id='video'></video><br><br>`;
                 }
                 else {
                     if(mediaURL.includes(".png") || mediaURL.includes(".jpg") || mediaURL.includes(".jpeg") || mediaURL.includes(".gif") || mediaURL.includes(".webp")) {
-                        const image = data.url_overridden_by_dest;
-                        postContent += `<img src='${image}' alt='image' id='image' class='thumbnail' onclick="openPopup('${image}')" /><br><br>`;
+                        postContent += `<img src='${mediaURL}' alt='image' id='image' class='thumbnail' onclick="openPopup('${mediaURL}')" /><br><br>`;
                     }
                 }
     
