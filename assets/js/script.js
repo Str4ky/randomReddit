@@ -52,25 +52,6 @@ button.addEventListener('click', async () => {
     }
 });
 
-const popup = document.getElementById('imagePopup');
-const popupImage = document.getElementById('popupImage');
-const closePopup = document.getElementById('closePopup');
-
-function openPopup(imageUrl) {
-    popup.style.display = 'block';
-    popupImage.src = imageUrl;
-}
-
-closePopup.addEventListener('click', () => {
-    popup.style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-    if (event.target === popup) {
-        popup.style.display = 'none';
-    }
-});
-
 input.addEventListener('keydown', async (event) => {
     if (event.key === "Enter") {
         event.preventDefault();
@@ -121,5 +102,24 @@ input.addEventListener('keydown', async (event) => {
         } catch (error) {
             console.error('Error while parsing JSON datas:', error);
         }
+    }
+});
+
+const popup = document.getElementById('imagePopup');
+const popupImage = document.getElementById('popupImage');
+const closePopup = document.getElementById('closePopup');
+
+function openPopup(imageUrl) {
+    popup.style.display = 'block';
+    popupImage.src = imageUrl;
+}
+
+closePopup.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === popup) {
+        popup.style.display = 'none';
     }
 });
