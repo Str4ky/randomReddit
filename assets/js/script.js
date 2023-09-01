@@ -49,7 +49,7 @@ button.addEventListener('click', async () => {
                     postContent += `<iframe src="${youtubeURL}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id='youtube'></iframe><br><br>`;
                 }
                 else {
-                    postContent += `<a href="${mediaURL} target="_blank" id="media">${mediaURL}</a><br><br>`;
+                    postContent += `<a href="${mediaURL}" target="_blank" id="media">${mediaURL}</a><br><br>`;
                 }
             }
 
@@ -115,7 +115,7 @@ input.addEventListener('keydown', async (event) => {
                         postContent += `<iframe src="${youtubeURL}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id='youtube'></iframe><br><br>`;
                     }
                     else {
-                        postContent += `<a href="${mediaURL} target="_blank" id="media">${mediaURL}</a><br><br>`;
+                        postContent += `<a href="${mediaURL}" target="_blank" id="media">${mediaURL}</a><br><br>`;
                     }
                 }
     
