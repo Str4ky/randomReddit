@@ -4,7 +4,7 @@ const post = document.getElementById('post');
 
 button.addEventListener('click', async () => {
     const postLink = input.value;
-    const jsonUrl = `{postLink}.json`;
+    const jsonUrl = `${postLink}.json`;
 
     try {
         const response = await fetch(jsonUrl);
@@ -70,7 +70,7 @@ input.addEventListener('keydown', async (event) => {
         event.preventDefault();
         const subredditName = input.value;
         const timestamp = Date.now();
-        const jsonUrl = `https://www.reddit.com/r/${subredditName}/random.json?timestamp=${timestamp}`;
+        const jsonUrl = `${postLink}.json`;
     
         try {
             const response = await fetch(jsonUrl);
